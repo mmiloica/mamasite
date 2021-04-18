@@ -19,14 +19,15 @@ def contact(request):
             name,
             message2,
             telefon,
-            ['decijilekarslobodanka@gmail.com'],
+            ['deciji.lekar.slobodanka@gmail.com',
+            'mailservispedijatar@gmail.com'],
             fail_silently=False,
         )
 
 
-        return render(request, 'contact.html',context)
+        return render(request, 'index2.html',context)
 
 
 
     else:
-        return render(request, 'contact.html',{})
+        return render(request, 'index.html',{})

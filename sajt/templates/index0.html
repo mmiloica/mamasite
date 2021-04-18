@@ -22,19 +22,14 @@
   <meta name="msapplication-TileImage" content="{% static 'sajt/images/ico/ms-icon-144x144.png' %}">
   <meta name="theme-color" content="#ffffff">
 
-     <title>Dečiji lekar u Obrenovcu - Dr Slobodanka Vukosavljević</title>
+     <title>Dečiji lekar u Obrenovcu</title>
 
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-     <meta name="description" content="Deciji lekar pedijatar Obrenovac">
+     <meta name="description" content="">
      <meta name="keywords" content="Deciji lekar, pedijatar, u Obrenovcu, Obrenovac,dr Slobodanka , dr Vukosavljevic, Slobodanka Vukosavljevic">
      <meta name="author" content="Miloš">
      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-     <meta property="og:title" content="Deciji lekar pedijatar Slobodanka Vukosavljevic">
-     <meta property="og:description" content="dr Vukosavljevic, dr Slobodanka Vukosavljevi, pedijatar Vukosavljevic, deciji lekar Slobodanka Vukosavljevic">
-    <meta property="og:url" content="http://www.decijilekar.rs">
-
-
 
      <link rel="stylesheet" href="{% static 'sajt/css/bootstrap.min.css' %}">
      <link rel="stylesheet" href="{% static 'sajt/css/font-awesome.min.css' %}">
@@ -68,7 +63,7 @@
                     </div>
 
                     <div class="col-md-8 col-sm-7 text-align-center">
-                         <a href= "tel:0644220590"><span class="phone-icon"><i class="fa fa-phone"></i> 064-4220590</span>
+                         <span class="phone-icon"><i class="fa fa-phone"></i> 064-4220590</span>
                          <span class="date-icon"><i class="fa fa-calendar-plus-o"></i>Ponedeljak-Petak : 10:00 - 12:00  i  16:00 - 19:00</span>
 
                     </div>
@@ -76,8 +71,9 @@
                </div>
           </div>
      </header>
-
-
+{% if message %}
+<h2>Hvala što ste poslali poruku </h2>
+{% else %}
      <!-- MENU -->
      <section class="navbar navbar-default navbar-static-top" role="navigation">
           <div class="container">
@@ -111,7 +107,7 @@
 
           </div>
      </section>
-
+{% endif %}
 
      <!-- HOME -->
      <section id="home" class="slider" data-stellar-background-ratio="0.5">
@@ -240,7 +236,7 @@
                               <div class="news-info">
                                    <span></span>
                                    <h3>Pregledi kože</h3>
-                                   <p>Takođe su mogući i dermatološki pregledi od strane konsultanta, specijaliste dermatovenerologije.</p>
+                                   <p>Takođe su mogući i dermatološki pregledi od strane konsultanta, specijalite dermatovenerologije.</p>
 
                               </div>
                          </div>
@@ -443,4 +439,5 @@
      <script src="{% static 'sajt/js/custom.js' %}"></script>
 
 </body>
+
 </html>
