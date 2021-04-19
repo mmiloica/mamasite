@@ -30,11 +30,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-<<<<<<< HEAD
+
 SECRET_KEY = env('SECRET_KEY')
-=======
-SECRET_KEY = '!8^*3unp^nq=qq3-womrk^9wgbx'
->>>>>>> bdc9a464fb85f20081fff236236b9f21bac2b796
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -148,13 +146,10 @@ STATICFILES_STORAGE = 'whitenoise.storage.Compressed.ManifestStaticFilesStorage'
 
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-<<<<<<< HEAD
+
 EMAIL_HOST_USER = env('EMAIL_HOST_USER')
 EMAIL_HOST_PASSWORD = env('EMAIL_HOST_PASSWORD')
-=======
-EMAIL_HOST_USER = 'm'
-EMAIL_HOST_PASSWORD = ''
->>>>>>> bdc9a464fb85f20081fff236236b9f21bac2b796
+
 EMAIL_USE_TLS = 'True'
 
 
