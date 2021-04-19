@@ -15,7 +15,7 @@ import os
 import django_heroku
 import dj_database_url
 from decouple import config
-import environ
+from os import environ
 
 env = environ.Env()
 environ.Env.read_env()
