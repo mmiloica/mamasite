@@ -38,7 +38,7 @@ SECRET_KEY='!8^*3unp^nq=qq9+*1c@2*)=$+!%#a^^tb&p53-womrk^9wgbx'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['www.decijilekar.rs']
 
 
 # Application definition
