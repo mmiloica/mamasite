@@ -11,7 +11,7 @@ env = environ.Env(
     # set casting, default value
     DEBUG=(bool, False)
 )
-
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 # False if not in os.environ
 DEBUG = True
 
